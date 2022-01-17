@@ -1,0 +1,245 @@
+    /* HEADER */
+    .logo {
+        display: flex;
+        justify-content: center;
+        border: 1px solid transparent;
+        box-shadow: 0 0 16px $grey;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: $grey;
+        justify-content: flex-start;
+        img {
+            width: 50%;
+            margin-left: 2%;
+            @media (min-width: 768px) {
+                width: 30%;
+                margin-left: 10%;
+            }
+            @media (min-width: 1200px) {
+                margin-left: 17%;
+            }
+        }
+        .arrow {
+            color: black;
+            margin-top: 8px;
+            margin-right: 50px;
+            margin-left: 20px;
+            @media (min-width: 768px) {
+                margin-right: 150px;
+            }
+        }
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        background-color: $grey2;
+        z-index: -2;
+        img {
+            width: 100%;
+            position: relative;
+            @media (min-width: 768px) {
+                border-radius: 40px;
+                width: 80%;
+            }
+        }
+    }
+    /* BODY */
+    #box {
+        background-color: $grey3;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        margin-top: -30px;
+        position: relative;
+        .hearttitle {
+            display: flex;
+            justify-content: space-around;
+            @media (min-width: 768px) {
+                justify-content: space-between;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .heart {
+                position: relative;
+                width: 50px;
+                height: 50px;
+              
+                .fa-heart {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    font-size: 22px;
+                    margin: 0 !important;
+                    transition: opacity 1s;
+                    cursor: pointer;
+                }
+                .fas {
+                    background: linear-gradient(to bottom left, #9356DC, #FF79DA);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity: 0;
+                }
+                &:hover {
+                    .fas {
+                        opacity: 1;
+                    }
+                    .far {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        .flextab {
+            @media (min-width: 768px) {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+        .container {
+            .boxmenu {
+                &:nth-child(0n + 2) {
+                    animation-delay: 1s;
+                }
+                &:nth-child(0n + 3) {
+                    animation-delay: 2s;
+                }
+                &:nth-child(0n + 4) {
+                    animation-delay: 3s;
+                }
+            }
+        }
+        .boxmenu {
+            animation: appear 5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            display: flex;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 16px #0000002e;
+            margin: 10px;
+            .content {
+                width: 100%;
+            }
+            .fas {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 30px;
+                color: white;
+                margin-top: 10px;
+            }
+            &:hover {
+                .appear {
+                    flex: 15% 0 0;
+                    .fas {
+                        animation: valide 1s;
+                    }
+                }
+            }
+            .appear {
+                flex: 0 0 0;
+                transition: flex 1s;
+                overflow: hidden;
+                background-color: $blue;
+                justify-content: space-evenly;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .flexmenu {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 90%;
+                overflow: hidden;
+                p {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+            .price {
+                margin-right: 10px;
+                margin-bottom: -9px;
+                margin-top: 13px;
+                p {
+                    text-overflow: ellipsis;
+                }
+            }
+            h3 {
+                width: 95%;
+                margin-bottom: 0px;
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .flexsubmit {
+        display: flex;
+        justify-content: center;
+    }
+    .btn {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+/* FOOTER */
+    .footer {
+        background-color: $black;
+        padding-bottom: 20px;
+        h4 {
+            color: white;
+            margin-left: 20px;
+            margin-top: 0px;
+            padding-top: 20px;
+            font-family: shrikhand;
+        }
+    }
+    ul  {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        li {
+            margin-left: 20px;
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+    h5 {
+        margin-bottom: 0px;
+        margin-left: 20px;
+        font-family: shrikhand;
+        font-size: 28px;
+        padding-top: 20px;
+        color: white;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    h4 {
+        margin-bottom: 0px;
+        font-family: shrikhand;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    h2 {
+        margin-left: 10px;
+        margin-top: 25px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: initial;
+    }
+    p {
+        font-size: 15px;
+    }

@@ -1,0 +1,19 @@
+{
+  "name": "p3_ohmyfood",
+  "version": "1.0.0",
+  "description": "project oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rasebery/KeithConscience_3_15112021.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rasebery/KeithConscience_3_15112021.github.io/issues"
+  },
+  "homepage": "https://github.com/Rasebery/KeithConscience_3_15112021.github.io#readme"
+}

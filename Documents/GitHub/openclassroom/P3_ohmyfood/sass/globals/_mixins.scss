@@ -1,0 +1,6 @@
+@mixin body-shadow {
+  box-shadow: 2px 4px 15px $grey5;
+}
+@mixin body-shadow2 {
+  box-shadow: 2px 4px 30px $grey5;
+}
