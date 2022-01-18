@@ -158,9 +158,6 @@ body {
   text-align: center;
   background-color: #f2f2f2;
 }
-.exploration .btn:hover {
-  opacity: 0, 8;
-}
 .exploration p {
   color: grey;
   margin-right: 19px;
