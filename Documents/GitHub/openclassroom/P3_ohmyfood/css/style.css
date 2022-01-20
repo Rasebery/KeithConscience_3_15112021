@@ -23,9 +23,10 @@ body {
   color: white;
   background: linear-gradient(90deg, #9356dc, #ff79da);
   box-shadow: 2px 4px 15px #C0C0C0;
+  transition: opacity 1s;
 }
 .btn:hover {
-  opacity: 0, 8;
+  opacity: 0.8;
   box-shadow: 2px 4px 30px #C0C0C0;
 }
 
